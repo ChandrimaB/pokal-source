@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/meeting"
+        android:title="@string/MeetingBottomNav"
+        android:icon="@drawable/ic_schedule_green_24dp" />
+    <item android:id="@+id/task"
+        android:title="@string/TaskBottomNav"
+        android:icon="@drawable/ic_view_list_white_24dp" />
+    <item android:id="@+id/note"
+        android:title="@string/NoteBottomNav"
+        android:icon="@drawable/ic_library_books_24dp" />/>
+</menu>

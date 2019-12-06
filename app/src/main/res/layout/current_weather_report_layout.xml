@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/weatherReportLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/mainAppColor"
+    android:elevation="4dp">
+
+    <ImageView
+        android:id="@+id/currentWeather"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_sun" />
+
+    <TextView
+        android:id="@+id/currentTime"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="@font/alegreya"
+        android:gravity="left"
+        android:text="@string/WeatherReportCurrentTime"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/currentWeather" />
+
+    <TextView
+        android:id="@+id/currentCity"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="@font/alegreya"
+        android:gravity="left"
+        android:text="@string/WeatherReportCurrentLocaltion"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/currentTime" />
+
+    <TextView
+        android:id="@+id/currentDate"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/alegreya"
+        android:gravity="right"
+        android:text="Wednesday, Mar 15"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/currentWeather"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/currentTemperature"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginRight="40dp"
+        android:fontFamily="@font/alegreya"
+        android:gravity="right"
+        android:text="@string/WeatherReportCurrentTemperature"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        app:layout_constraintStart_toEndOf="@+id/currentWeather"
+        app:layout_constraintTop_toBottomOf="@id/currentDate"
+        app:layout_constraintEnd_toStartOf="@id/currentTemperatureUnit"/>
+
+    <TextView
+        android:id="@+id/currentTemperatureUnit"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/alegreya"
+        android:gravity="right"
+        android:text="@string/WeatherReportTemperatureFahrenheit"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/currentTemperature"
+        app:layout_constraintTop_toBottomOf="@id/currentDate" />
+
+    <TextView
+        android:id="@+id/currentCondition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/alegreya"
+        android:layout_marginRight="10dp"
+        android:gravity="right"
+        android:text="@string/WeatherReportCurrentCondition"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/currentWeather"
+        app:layout_constraintTop_toBottomOf="@id/currentTemperature" />
+</android.support.constraint.ConstraintLayout>

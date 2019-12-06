@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/calendarItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="2dp"
+    android:background="@color/white"
+    android:elevation="2dp">
+
+    <ImageButton
+        android:id="@+id/meetingType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:textColor="@color/mainAppColor"
+        android:paddingTop="5dp"
+        android:paddingRight="40dp"
+        android:paddingLeft="20dp"
+        android:paddingBottom="5dp"
+        app:layout_constraintBottom_toTopOf="@id/meetingStartTime"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/meetingIndicator"
+        app:srcCompat="@drawable/ic_schedule_24dp" />
+
+    <TextView
+        android:id="@+id/meetingStartTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/alegreya"
+        android:text="@string/MeetingStartTime"
+        android:textColor="@color/mainAppColor"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@id/meetingEndTime"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/meetingType" />
+
+    <TextView
+        android:id="@+id/meetingEndTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/alegreya"
+        android:textColor="@color/mainAppColor"
+        android:textSize="16sp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/meetingStartTime"/>
+
+    <View
+        android:id="@+id/meetingIndicator"
+        android:layout_height="80dp"
+        android:layout_width="4dp"
+        android:background="@color/calendarItemBackgroundGoogle"
+        app:layout_constraintLeft_toRightOf="@id/meetingType"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:id="@+id/meetingSubject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:fontFamily="@font/alegreya"
+        android:gravity="right|center_vertical"
+        android:maxLength="25"
+        android:text="Subject"
+        android:paddingTop="3dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="@color/mainAppColor"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/meetingDate"
+        app:layout_constraintLeft_toRightOf="@id/meetingIndicator"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/meetingDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:fontFamily="@font/alegreya"
+        android:gravity="right|center_vertical"
+        android:maxLength="20"
+        android:paddingTop="3dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="@color/mainAppColor"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@id/meetingPlace"
+        app:layout_constraintLeft_toRightOf="@+id/meetingIndicator"
+        app:layout_constraintTop_toBottomOf="@id/meetingSubject"
+        app:layout_constraintVertical_chainStyle="spread_inside" />
+
+    <TextView
+        android:id="@+id/meetingPlace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/alegreya"
+        android:gravity="right|center_vertical"
+        android:maxLength="30"
+        android:paddingTop="3dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="@color/mainAppColor"
+        android:textSize="16sp"
+        app:layout_constraintHorizontal_bias="0.42"
+        app:layout_constraintLeft_toRightOf="@id/meetingIndicator"
+        app:layout_constraintTop_toBottomOf="@id/meetingDate" />
+
+    <ImageButton
+        android:id="@+id/remindMe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/circular_background_grey"
+        android:gravity="right|center_vertical"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:srcCompat="@drawable/ic_alarm_on_black_24dp" />
+</android.support.constraint.ConstraintLayout>

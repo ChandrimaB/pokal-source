@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#33b5e5</color> <!-- this is the primary theme color for the app -->
+    <color name="colorPrimaryDark">#4d018b</color>
+    <color name="colorAccent">#f97aa5</color>
+    <color name="white">#FFFFFF</color>
+    <color name="editTextBackground">#58c7c7c7</color>
+    <color name="editTextColor">@color/white</color>
+    <color name="pressedButtonBackground">#a4ed95ec</color>
+    <color name="pinkLight">#FFEF7BE9</color>
+    <color name="hintColor">#f9d1f7</color>
+    <color name="mainAppColor">#a60409a1</color>
+    <color name="weathersuncolor">#f7c215</color>
+    <color name="weathercloudcolor">#00bfff</color>
+    <color name="weathersnowflakecolor">#d5f3fd</color>
+    <color name="listItemBackgroundheader">#778539ff</color>
+    <color name="calendarTextColor">#f4484848</color>
+    <color name="calendarTextColorBold">#ebb6b6b6</color>
+    <color name="calendarItemBackgroundGoogle">#dc96ece2</color>
+    <color name="calendarItemBackgroundPokal">#dcd5ec96</color>
+    <color name="calendarItemBackgroundTask">#dce6bbf1</color>
+    <color name="calendarItemBackgroundNote">#dcfaef8a</color>
+    <color name="weatherDetailBackground">#effffdcf</color>
+    <color name="weatherDetailHeader">#cfffc300</color>
+    <color name="eventsAndMore">#cffbfbfc</color>
+    <color name="profilePicDefault">#8aabd8ff</color>
+    <color name="profilePicBackground">#68a3f4ff</color>
+    <color name="searchTranslucentBackground">#af000000</color>
+</resources>

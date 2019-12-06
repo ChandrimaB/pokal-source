@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/profileSection"
+        android:title="@string/ProfileSection">
+        <menu>
+    <group
+        android:id="@+id/menu_profile"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/profileName"
+            android:title="Name"
+            android:icon="@drawable/ic_library_books_24dp">
+        </item>
+
+        <item
+            android:id="@+id/profilePhone"
+            android:title="Phone"
+            android:icon="@drawable/ic_smartphone_24dp">
+        </item>
+    </group>
+        </menu>
+    </item>
+
+    <!-- To give the group a heading, we need to add group under item-menu-->
+    <item
+        android:id="@+id/emergencySection"
+        android:title="@string/InCaseOfEmergency">
+        <menu>
+            <group
+                android:id="@+id/menu_emergency"
+                android:checkableBehavior="none">
+                <item
+                    android:id="@+id/emergencyContactName"
+                    android:title="Emergency Name"
+                    android:icon="@drawable/ic_library_books_24dp">
+                </item>
+                <item
+                    android:id="@+id/emergencyContactPhone"
+                    android:title="Emergency Phone"
+                    android:icon="@drawable/ic_smartphone_24dp">
+                </item>
+            </group>
+        </menu>
+    </item>
+
+    <group
+        android:id="@+id/menu_settings"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/Settings"
+            android:title="@string/Settings"
+            android:icon="@drawable/ic_settings_white_24dp">
+        </item>
+        <item
+            android:id="@+id/Signout"
+            android:title="@string/Signout"
+            android:icon="@drawable/ic_power_settings_new_white_24dp">
+        </item>
+    </group>
+</menu>

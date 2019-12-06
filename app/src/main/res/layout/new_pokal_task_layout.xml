@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollViewPokalTask"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayoutPokalTask"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <CalendarView
+            android:id="@+id/taskDate"
+            android:layout_width="wrap_content"
+            android:layout_height="220dp"
+            android:layout_marginStart="4dp"
+            app:layout_constraintRight_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/taskSubject"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/mainAppColor"
+            android:background="@drawable/bordered_simple_edittext"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="5dp"
+            android:fontFamily="@font/alegreya"
+            android:padding="5dp"
+            android:hint="@string/TaskSubject"
+            android:inputType="textCapWords"
+            android:textColor="@color/mainAppColor"
+            android:textSize="18sp"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/taskTime"
+            app:layout_constraintTop_toBottomOf="@id/taskDate" />
+
+        <TextView
+            android:id="@+id/taskTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="15dp"
+            android:padding="5dp"
+            android:textColorHint="@color/mainAppColor"
+            android:background="@drawable/bordered_simple_edittext"
+            android:fontFamily="@font/alegreya"
+            android:hint="@string/TaskTime"
+            android:textColor="@color/mainAppColor"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/taskDescription"
+            app:layout_constraintLeft_toRightOf="@id/taskSubject"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/taskDate" />
+
+        <EditText
+            android:id="@+id/taskDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textColorHint="@color/mainAppColor"
+            android:background="@drawable/bordered_simple_edittext"
+            android:layout_marginTop="5dp"
+            android:padding="5dp"
+            android:inputType="textCapWords"
+            android:fontFamily="@font/alegreya"
+            android:hint="@string/TaskDescrtiption"
+            android:textColor="@color/mainAppColor"
+            android:textSize="18sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/taskSubject" />
+
+        <ImageButton
+            android:id="@+id/taskAlarmButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circular_background_grey"
+            android:gravity="center_vertical"
+            android:padding="15dp"
+            app:layout_constraintBottom_toTopOf="@id/taskAlarmButtonLabel"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/taskAlarmMinutesBefore"
+            app:layout_constraintTop_toBottomOf="@id/taskDescription"
+            app:layout_constraintVertical_chainStyle="packed"
+            app:srcCompat="@drawable/ic_alarm_on_black_24dp" />
+
+        <TextView
+            android:id="@+id/taskAlarmButtonLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="11dp"
+            android:fontFamily="@font/alegreya"
+            android:text="@string/TaskAlarmLabel"
+            android:textColor="@color/mainAppColor"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toTopOf="@id/taskRepeat"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/taskAlarmMinutesBefore"
+            app:layout_constraintTop_toBottomOf="@id/taskAlarmButton" />
+
+        <NumberPicker
+            android:id="@+id/taskAlarmMinutesBefore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/alegreya"
+            android:textColor="@color/mainAppColor"
+            android:textSize="18sp"
+            app:layout_constraintLeft_toRightOf="@id/taskAlarmButton"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/taskDescription"
+            app:layout_constraintBottom_toTopOf="@id/taskRepeat"/>
+
+        <RadioGroup
+            android:id="@+id/taskRepeat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+            <RadioButton
+                android:id="@+id/taskRepeatNever"
+                android:text="@string/TaskRepeatNever"
+                android:fontFamily="@font/alegreya"
+                android:textSize="10sp"
+                android:textColor="@color/mainAppColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:id="@+id/taskRepeatWeekly"
+                android:text="@string/TaskRepeatWeekly"
+                android:fontFamily="@font/alegreya"
+                android:textSize="10sp"
+                android:textColor="@color/mainAppColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:id="@+id/taskRepeatDaily"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/TaskRepeatDaily"
+                android:textColor="@color/mainAppColor"
+                android:fontFamily="@font/alegreya"
+                android:textSize="10sp"/>
+
+            <RadioButton
+                android:id="@+id/taskRepeatWeekdays"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/TaskRepeatWeekdays"
+                android:textColor="@color/mainAppColor"
+                android:fontFamily="@font/alegreya"
+                android:textSize="10sp"/>
+            <RadioButton
+                android:id="@+id/taskRepeatWeekends"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/TaskRepeatWeekends"
+                android:textColor="@color/mainAppColor"
+                android:fontFamily="@font/alegreya"
+                android:textSize="10sp"/>
+        </RadioGroup>
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+<dimen name="navDrawer_header_height">260dp</dimen>
+    <dimen name="edittext_padding">8dp</dimen>
+    <dimen name="edittext_margin_end">8dp</dimen>
+    <dimen name="edittext_margin_start">8dp</dimen>
+    <dimen name="edittext_margin_up">2dp</dimen>
+    <dimen name="edittext_margin_bottom">2dp</dimen>
+    <dimen name="button_padding">8dp</dimen>
+    <dimen name="toolbar_height">80dp</dimen>
+</resources>

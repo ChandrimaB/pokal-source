@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/constraintLayoutEventsAndMore"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp"
+    android:background="@color/white"
+    android:layout_marginLeft="20dp">
+
+    <ImageButton
+        android:id="@+id/specialReminders"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/circular_background"
+        app:layout_constraintBottom_toTopOf="@id/settings"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/specialReminderText"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_cake_white_24dp" />
+
+    <TextView
+        android:id="@+id/specialReminderText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/alegreya"
+        android:paddingLeft="15dp"
+        android:text="@string/SendWishes"
+        android:textColor="@color/mainAppColor"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@id/settingsText"
+        app:layout_constraintLeft_toRightOf="@id/specialReminders"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.125" />
+
+    <ImageButton
+        android:id="@+id/settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/circular_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/settingsText"
+        app:layout_constraintTop_toBottomOf="@id/specialReminders"
+        app:srcCompat="@drawable/ic_settings_white_24dp" />
+
+    <TextView
+        android:id="@+id/settingsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/alegreya"
+        android:paddingLeft="15dp"
+        android:paddingTop="5dp"
+        android:text="@string/Settings"
+        android:textColor="@color/mainAppColor"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/settings" />
+</android.support.constraint.ConstraintLayout>

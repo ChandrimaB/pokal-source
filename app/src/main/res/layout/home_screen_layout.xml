@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/home_screen_recycler_view"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"/>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/home_screen_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="16dp"
+        app:backgroundTint="@color/colorPrimary"
+        app:srcCompat="@drawable/ic_add_white_24dp" />
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_gravity="bottom"
+        android:visibility="gone"
+        app:itemIconTint="@drawable/bottom_navigation_icon_selector"
+        app:itemTextColor="@color/white"
+        android:animateLayoutChanges="true"
+        app:menu="@menu/bottom_navigation_menu" />
+</FrameLayout>
+

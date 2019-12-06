@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        layout="@layout/calendar_item_layout"/>
+
+    <TextView
+        android:id="@+id/type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:fontFamily="@font/alegreya"
+        android:textSize="18sp"
+        android:background="@drawable/bordered_simple_edittext"
+        android:padding="5dp"
+        android:elevation="2dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/calendarItem" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:fontFamily="@font/alegreya"
+        android:textSize="18sp"
+        android:background="@drawable/bordered_simple_edittext"
+        android:scrollbars="vertical"
+        android:maxLines="5"
+        android:padding="5dp"
+        android:elevation="2dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/type" />
+
+    <TextView
+        android:id="@+id/creator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:fontFamily="@font/alegreya"
+        android:background="@drawable/bordered_simple_edittext"
+        android:textSize="18sp"
+        android:scrollbars="vertical"
+        android:maxLines="5"
+        android:elevation="2dp"
+        android:padding="5dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/description" />
+
+    <TextView
+        android:id="@+id/participants"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/bordered_simple_edittext"
+        android:elevation="2dp"
+        android:fontFamily="@font/alegreya"
+        android:maxLines="5"
+        android:padding="5dp"
+        android:scrollbars="vertical"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/creator" />
+
+    <ImageView
+        android:id="@+id/addAttachments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:elevation="2dp"
+        app:srcCompat="@drawable/ic_attach_file_black_24dp"
+        android:maxLines="5"
+        android:padding="5dp"
+        android:scrollbars="vertical"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/participants"/>
+
+    <TextView
+        android:id="@+id/attachments"
+        android:layout_width="298dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/bordered_simple_edittext"
+        android:elevation="2dp"
+        android:fontFamily="@font/alegreya"
+        android:maxLines="5"
+        android:padding="5dp"
+        android:scrollbars="vertical"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/addAttachments"
+        app:layout_constraintTop_toBottomOf="@+id/participants" />
+
+</android.support.constraint.ConstraintLayout>

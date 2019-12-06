@@ -1,0 +1,115 @@
+<resources>
+    <string name="AppName">Pokal</string>
+
+    <string name="WelcomeMessage">Welcome!\nLet\'s customize Pokal for you.</string>
+    <string name="FullNameHint">Full Name</string>
+    <string name="EmailHint">Email</string>
+    <string name="SyncCalendarCheckBox">Sync Google Calendar</string>
+    <string name="PasswordHint">Pokal Password</string>
+    <string name="DobHint">Date of Birth, mm/dd/yyyy</string>
+    <string name="PhoneHint">Phone</string>
+    <string name="EmergencyContactNameHint">Emergency contact name</string>
+    <string name="EmergencyContactPhoneHint">Emegency contact phone</string>
+    <string name="SignIn">Sign in</string>
+
+    <string name="EmailHintUnlock">Email</string>
+    <string name="PasswordHintUnlock">Password</string>
+
+    <string name="SignUpButtonClickAlertTitle">Please check your details</string>
+    <string name="SignUpButtonClickAlertMessage_Incomplete">We need all the details to set you up.\nThis is just one time, promise!</string>
+    <string name="SignUpButtonClickAlertMessage_Date">The Date of Birth does not seem correct, please enter again! (MM-DD-YYYY)</string>
+    <string name="SignUpButtonClickAlertMessage_Email">The Email does not seem correct, please enter again!)</string>
+    <string name="SignUpButtonClickAlertMessage_AllDone">You are all set! Thank you.</string>
+    <string name="SignUpButtonClickAlertPositiveButton">Ok</string>
+
+    <string name="SignInButtonClickAlertMessage_Incomplete">Please enter sign in information.</string>
+    <string name="SignInButtonClickAlertMessage_Failed">Your username or password is incorrect.\nPlease try again.</string>
+
+    <string name="Settings">Settings</string>
+
+    <string name="InCaseOfEmergency">EMERGENCY CONTACT</string>
+    <string name="ProfileSection">PROFILE</string>
+
+    <string name="PreferenceGoogleCalendarSync">Sync Google Calendar</string>
+    <string name="PreferenceGoogleCalendarSyncSummary">Sync with your Google Calendar to keep updated with Google Calendar events.</string>
+    <string name="Signout">Log out</string>
+    <string name="PreferenceSelectTemperatureUnitTitle">Show temperatures in Fahrenheit OR Celcius</string>
+    <string name="PreferenceSelectTemperatureUnit">Select unit for displaying temperature in weatherFetchStatus data.</string>
+    <string name="Fahrenheit">Fahrenheit</string>
+    <string name="Celcius">Celcius</string>
+    <string-array name="TemperatureUnitKeys">
+        <item>@string/Fahrenheit</item>
+        <item>@string/Celcius</item>
+    </string-array>
+    <string-array name="TemperatureUnitValues">
+        <item>@string/Fahrenheit</item>
+        <item>@string/Celcius</item>
+    </string-array>
+    <string name="DeleteAccount">Delete Pokal Account</string>
+    <string name="DeleteAccountConfirmation">Are you sure you want to delete account?</string>
+
+    <string name="InternetUnavailableError">Your device seems to be offline,\nplease check your connection.</string>
+
+    <string name="WeatherReportCurrentTime">9.00 am</string>
+    <string name="WeatherReportCurrentLocaltion">Mountain View</string>
+    <string name="WeatherReportCurrentTemperature">%1s\u00B0</string>
+    <string name="WeatherReportAvgTemperature">%1s\u00B0 %2s</string>
+    <string name="WeatherReportCurrentCondition">%1s now</string>
+    <string name="WeatherReportCurrentFetchError">Current weather will be available shortly.</string>
+    <string name="WeatherReportFiveDays">Next five days weather forecast</string>
+    <string name="WeatherReportFiveDaysError">Weather forecast will be available shortly.</string>
+    <string name="WeatherReportLocPermissionRequest">Allow Location\nAccess</string>
+    <string name="OpenWeatherMapUrl"><a href="https://www.openweathermap.org">More details...</a></string>
+    <string name="WeatherReportTemperatureFahrenheit">"F|C"</string>
+    <string name="WeatherReportTemperatureCelcius">"C|F"</string>
+    <string name="WeatherReportTemperatureFahrenheitPrefered">"F"</string>
+    <string name="WeatherReportTemperatureCelciusPrefered">"C"</string>
+    <string name="TomorrowsDetails">Tomorrow\'s weather in detail -</string>
+
+    <string name="HomeDrawerOpenContentDescription">Profile drawer opened</string>
+    <string name="HomeDrawerCloseContentDescription">Profile drawer closed</string>
+
+    <string name="CalendarPermissionsRationaleText">This app needs to access your Google account (via Contacts).</string>
+    <string name="HomeNoCalendarItems">No meetings scheduled for today!</string>
+    <string name="HomeAddCalendarItems">Add item.</string>
+    <string name="CalendarHeaderText">Today\'s Schedule</string>
+    <string name="MeetingDate">Date: %1s</string>
+    <string name="MeetingStartTime">%1s -</string>
+    <string name="CalendarListHeader">Upcoming schedule</string>
+    <string name="CalendarDetailsToolbarTitle">Calendar Details</string>
+    <string name="NewNoteToolbarTitle">New Note</string>
+    <string name="NewTaskToolbarTitle">New Task</string>
+    <string name="SpecialOccassions">Special Reminders</string>
+    <string name="NoUpcomingMeetings">No upcoming meetings.</string>
+
+    <string name="MeetingBottomNav">Meeting</string>
+    <string name="NoteBottomNav">Note</string>
+    <string name="TaskBottomNav">Task</string>
+
+    <string name="NoteEditDate">Date - %1s\n\n</string>
+
+    <string name="SeeCalendarText">View calendar</string>
+    <string name="SendWishes">Send birthday wishes</string>
+
+    <string name="GoogleCalendarSyncInfo">You have %1s Google Calendar Sync during sign in. You can change this in Settings later.</string>
+    <string name="TemperatureUnitPreference">Pokal helps plan your day with weather updates. Please select your temperature unit preference. You can change this in Settings later.</string>
+    <string name="SearchQueryHintEmail">Send email to...</string>
+    <string name="SearchQueryHintText">Send sms to...</string>
+    <string name="ShareNote">Share Note</string>
+    <string name="EditTask">Edit Task</string>
+    <string name="ShareNoteViaEmailSubject">"Pokal Note - sent from my Pokal"</string>
+    <string name="NoteEmailedToast">"Email sent!"</string>
+    <string name="TaskSubject">Subject</string>
+    <string name="TaskDescrtiption">Description</string>
+    <string name="TaskTime">Time</string>
+    <string name="TaskAlarmLabel">Alarm %1s</string>
+    <string name="TaskRepeat">Repeat</string>
+    <string name="TaskRepeatWeekly">Weekly</string>
+    <string name="TaskRepeatDaily">Daily</string>
+    <string name="TaskRepeatWeekdays">Weekdays</string>
+    <string name="TaskRepeatWeekends">Weekends</string>
+    <string name="TaskRepeatNever">Repeat never</string>
+
+    <string name="NotificationChannelName">Alarm notifications</string>
+    <string name="NotificationChannelDescription">Notifications for meeting and task start times.</string>
+</resources>
